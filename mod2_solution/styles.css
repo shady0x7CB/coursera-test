@@ -6,156 +6,99 @@
 body{
 	position : absolute;
 }
-.row{
-	width : 100%;
-}
-	div.header{
+div.header{
 		
 		text-align : center;
 		padding : 10px;
 		margin-top : 20px;
 		
-	}
+		
+}	
+.row{
+	width : 100%;
+}	
+.row > div.div1, div.div2, div.div3{
 	
-	section.sec1{
+	width : 33.33%;
+	float : left;
+	margin-top : 50px;
+	background : gray;
+	border : 1px solid black;
+	position : relative;
+}
+	.row > div.div1 > div.head , div.div2 > div.head , div.div3 > div.head{
+		background : red;
+		width : 100px;
+		text-align : center;
+		float : right;
 		border : 1px solid black;
-		float : left;
-		margin-top : 50px;
-		background : gray;
+		border-top : none;
+		border-right : none;
 	}
-		section.sec1 > div.head{
-			float : right;
-			width : 130px;
-			border : 1px solid black;
-			border-top : 0px;
-			border-right : 0px;
-			background : gray;
-			text-align : center;
-			background : pink;
-		}
-		section.sec1 > div.article{
-			padding : 10px;
-			margin-top : 10px;
-			height : 200px;
-		
-			overflow : hidden;
-			width : 100%;
-		}
-			section.sec1 > div > article{}
-	section.sec2{
-		border : 1px solid black;
-		
-		float : left;
-		
-		margin-top : 50px;
-		background : gray;
+	.row div.div2 > div.head {
+		background : green;
 	}
-		section.sec2 > div.head{
-			width : 150px;
-			float : right;
-			
-			border : 1px solid black;
-			border-top : 0px;
-			border-right : 0px;
-			background : gray;
-			text-align : center;
-			background : red;
-			
-			
-		}
-		section.sec2 > div.article{
-			padding : 10px;
-			margin-top : 10px;
-			overflow : hidden;
-			width : 100%;
-			height : 200px;
-		
-		}
-			section.sec2 > div > article{
-				
-			}
-	section.sec3{
-		border : 1px solid black;
-		float : left;
-		margin-top : 50px;		
-		background : gray;
-		position : relative;
-		
-		
+	.row div.div3 > div.head{
+		background : lightgreen;
 	}
-		section.sec3 > div.head{
-			width : 130px;
-			float : right;
-			border : 1px solid black;
-			border-top : 0px;
-			border-right : 0px;
+		.row > div.div1 > div.article > article , div.div2 > div.article > article , div.div3 > div.article > article{
 			background : gray;
-			text-align : center;
-			background : lightyellow;
-		}
-		section.sec3 > div.article{
-			padding : 10px;
-			margin-top : 10px;
+			height : 100px;
 			overflow : hidden;
-			width : 100%;
-			height : 200px;
-		
-			
+			clear : both;
+			padding : 10px;
 		}
-			section.sec3 > div > article{
-				
-			}
+			
+	
 @media (min-width : 992px){
-	section.sec1{
-		width:  29.5%;
-		margin-left : 40px;
-		
+	.row > div.div1{
+		width:  30%;
+		margin-left : 25px;
 	}
-	section.sec2{
-		margin-left : 30px;
-		width : 29.5%;
-		margin-right : 20px;
+	.row > div.div2{
+		width : 30%;
+		margin-left : 25px;
 	}	
-	section.sec3{
-		width : 29.5%;
-		margin-right : 20px;
+	.row > div.div3{
+		width : 30%;
+		margin-left : 25px;
+		
 	}
 }
 @media (min-width : 768px) and (max-width : 991px){
-	section.sec1{
-		width : 45%;
-		margin-left : 31px;
-		height : 200px;
-		overflow : hidden;
-	}	
-	section.sec2{
-		width : 45%;
-		margin-left : 22px;
-		height : 200px;
-		overflow : hidden;
-		
-	}	
-	section.sec3{
-		width : 92.4%;
+	.row > div.div1{
+		width:  44%;
 		margin-left : 30px;
-		margin-top : 24px;
-		height : 200px;
+	}
+	.row > div.div2{
+		width : 44%;
+		margin-left : 30px;
+	}	
+	.row > div.div3{
+		width : 91.6%;
+		margin-left : 30px;
+		margin-top : 30px;
+		
 	}
 		
 }
 @media (max-width : 767px){
-	section.sec1{
-		width : 93%;
-		margin-left : 35px;
+	.row{
+		padding : 20px;
 	}
-	section.sec2{
-		width : 93%;
-		margin-left : 35px;
-		margin-top : 25px;
+	.row > div.div1{
+		width:  95%;
+		margin-left : 20px;
+	}
+	.row > div.div2{
+		width : 95%;
+		margin-top : 20px;
+		margin-left : 20px;
 	}	
-	section.sec3{
-		width : 93%;
-		margin-left : 35px;
-		margin-top : 25px;
+	.row > div.div3{
+		width : 95%;
+		margin-top : 20px;
+		margin-left : 20px;
+		
 	}
 }
