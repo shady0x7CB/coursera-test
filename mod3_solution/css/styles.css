@@ -1,7 +1,11 @@
+body{
+	position : relative;
+}
 h1{
 	font-size : 25px;
 }
 #header-nav {
+  width : 100%;
   background-color: silver;
   border-radius: 0;
   border: 0;
@@ -10,12 +14,11 @@ h1{
 .navbar-brand h1 { 
   color: black;
   margin-top : 0;
-  position: fixed !important;
-
 }
 
 #nav-list {
-  margin-top: 0;
+  position : absolute;
+  margin-top: 49px;
   position : relative;
   height : 116px;
 }
@@ -44,6 +47,11 @@ li > a{
 li:nth-child(3) > a{
 	border-bottom : 1px solid black;
 }
+
+#nav{
+	background : white;
+	border : 0;
+}
 #head > h2{
-	margin-top : -10px;
+	margin-top : 70px;
 }
