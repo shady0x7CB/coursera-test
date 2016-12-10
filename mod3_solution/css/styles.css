@@ -18,9 +18,9 @@ h1{
 
 #nav-list {
   position : absolute;
-  margin-top: 49px;
+  margin-top: 0px;
   position : relative;
-  height : 116px;
+  height : 119px;
 }
 
 div > p{
@@ -52,6 +52,4 @@ li:nth-child(3) > a{
 	background : white;
 	border : 0;
 }
-#head > h2{
-	margin-top : 70px;
-}
+
