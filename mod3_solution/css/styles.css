@@ -1,0 +1,55 @@
+body{
+	position : relative;
+}
+h1{
+	font-size : 25px;
+}
+#header-nav {
+  width : 100%;
+  background-color: silver;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand h1 { 
+  color: black;
+  margin-top : 0;
+}
+
+#nav-list {
+  position : absolute;
+  margin-top: 0px;
+  position : relative;
+  height : 119px;
+}
+
+div > p{
+	background : silver;
+	height : 1000px;
+	margin-top : 50px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle {
+  border-color: black;
+}
+.navbar-default .navbar-toggle:focus{
+  border-color: white;
+}
+li > a{
+	background-color : white;
+	border-top : 1px solid black;
+}
+li:nth-child(3) > a{
+	border-bottom : 1px solid black;
+}
+
+#nav{
+	background : white;
+	border : 0;
+}
+
